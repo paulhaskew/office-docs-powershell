@@ -247,13 +247,13 @@ Accept wildcard characters: False
 ```
 
 ### -SearchResolveExactEmailOrUPN
-Removes the search capability from People Picker.
+Removes the search capability from People Picker. Note, recently resolved names will still appear in the list.
+
+SharePoint Administrators will still be able to use starts with or partial name matching when enabled.
 
 The valid values are:
-
-Recently resolved names will still appear in the list.
-
-False- Restores default search functionality.
+False (default) - Starts with / partial name search functionality is available.
+True - Disables starts with / partial name search functionality for all SharePoint users, expect SharePoint Admins.
 
 ```yaml
 Type: Boolean
